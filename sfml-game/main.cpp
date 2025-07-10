@@ -3,7 +3,9 @@
 int main()
 {
     // Create the main window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
+    sf::RenderWindow window(sf::VideoMode(400, 400), "SFML window");
+    sf::CircleShape circle(23.f);
+    circle.setFillColor(sf::Color::Green);
 
     // Start the game loop
     while (window.isOpen())
@@ -19,6 +21,8 @@ int main()
 
         // Clear screen
         window.clear();
+
+        window.draw(circle);
 
         // Update the window
         window.display();
