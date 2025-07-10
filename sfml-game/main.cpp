@@ -4,7 +4,7 @@ int main()
 {
     // Create the main window
     sf::RenderWindow window(sf::VideoMode(400, 400), "SFML window");
-    sf::CircleShape circle(23.f);
+    sf::CircleShape circle(50.f);
     circle.setFillColor(sf::Color::Green);
     circle.setPosition(177, 177);
 
